@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: seagreen;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 235, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  width: 95%;
+  height: 90%;
+  background-color: seashell;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+}
+.child-1 {
+  width: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.child-1 .top,
+.child-1 .center,
+.child-1 .bottom {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: seagreen;
+}
+.child-1 .center {
+  height: 80%;
+  background-color: seashell;
+  flex-direction: column;
+}
+.child-1 .center h2 {
+  align-content: space-around;
+  margin-bottom: 22%;
+}
+.child-1 .center i {
+  font-size: larger;
+  color: seagreen;
+}
+.child-1 i {
+  color: seashell;
+  cursor: pointer;
+}
+.child-2 {
+  width: 38%;
+  height: 100%;
+  background-image: url(profile-photo.jpg);
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
+.child-2 .profile {
+  width: 54%;
+  position: absolute;
+  left: 23%;
+  bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.child-2 .profile .name {
+  color: seashell;
+}
+.child-2 .profile .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.child-2 .profile .contact i {
+  color: seashell;
+}
+.child-3 {
+  width: 55%;
+  margin: 3%;
+  position: relative;
+}
+.child-3 .top {
+  color: seagreen;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-bottom: 45px;
+  font-size: large;
+}
+.child-3 .bottom h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.child-3 .bottom .service-options {
+  display: flex;
+}
+.child-3 .bottom .left,
+.child-3 .bottom .right {
+  margin-right: 10px;
+}
+.child-3 .bottom .left h2,
+.child-3 .bottom .right h2 {
+  margin-bottom: 24px;
+}
